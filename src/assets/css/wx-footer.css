@@ -1,0 +1,53 @@
+#wx-footer nav{
+  /*盒子模型做兼容用*/
+  display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display: -moz-box; /* Firefox 17- */
+  display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  display: -moz-flex; /* Firefox 18+ */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+  width:100%;
+  overflow: hidden;
+  height: 50px;
+  background-color: #f9f9f9;
+  font-size:12px;
+  padding-top: 8px;
+}
+#wx-footer nav dl{
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-flex: 1;
+  -ms-flex-positive:1;
+  -webkit-flex-grow: 1; /*元素在容器内所占空间的伸展*/
+  text-align: center;
+  line-height: 1;
+}
+#wx-footer nav dl.router-link-active dt,#wx-footer nav dl.router-link-active dd{
+  color: #0bb908;
+}
+#wx-footer nav dt{
+  position: relative;
+  width:28px;
+  height:28px;
+  font-size:28px;
+  margin:0 auto 2px auto;
+  color: #797979;
+
+}
+#wx-footer nav dd{
+  color: #797979;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transform-origin:50% 0;
+  -moz-transform-origin:50% 0;
+  -ms-transform-origin:50% 0;
+  -o-transform-origin:50% 0;
+  transform-origin:50% 0;
+}
+

@@ -1,0 +1,137 @@
+#wx-header {
+  position: relative;
+  z-index: 99;
+  height: 45px;
+  padding: 0 15px 0 10px;
+  line-height: 45px;
+  background-color: #1b1b1b;
+  opacity: 1;
+  color: #ffffff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#wx-header .other {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+#wx-header .other > .iconfont {
+  font-size: 22px;
+  width: 40px;
+  text-align: center;
+}
+
+#wx-header .other > span {
+  font-size: 16px;
+  display: inline-block;
+}
+
+#wx-header .other.iconfont {
+  font-size: 22px;
+  width: 40px;
+  text-align: center;
+}
+
+#wx-header .other .tips-menu {
+  position: absolute;
+  right: 0;
+  top: 54px;
+  width: 133px;
+  font-size: 16px;
+  z-index: 2;
+  text-align: left;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: #49484b;
+  padding: 0 15px;
+  -webkit-transform-origin: 90% 0;
+  -moz-transform-origin: 90% 0;
+  transform-origin: 90% 0;
+}
+
+#wx-header .other .tips-menu li {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+}
+
+#wx-header .other .tips-menu li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 1px;
+  background-color: #5b5b5d;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+#wx-header .other .tips-menu .iconfont {
+  float: left;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+#wx-header .other .tips-menu::before {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -7px;
+  right: 15px;
+  content: '';
+  border-width: 0 6px 8px;
+  border-color: transparent transparent #49484b transparent;
+  border-style: solid;
+}
+
+#wx-header .tips-open {
+  opacity: 1;
+  -webkit-transition: initial;
+  transition: initial;
+}
+
+#wx-header .tips-close {
+  opacity: 0;
+  -webkit-transition: .2s opacity ease, .6s -webkit-transform ease;
+  transition: .2s opacity ease, .6s transform ease;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#wx-header .center {
+  font-size: 17px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#wx-header .center .icon-return-arrow {
+  left: 10px;
+  position: absolute;
+  font-size: 16px
+}
+
+#wx-header .other {
+  position: absolute;
+  cursor: pointer;
+  right: 10px
+}
+
+#wx-header .center span {
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, WenQuanYi Micro Hei, Arial, sans-serif
+}
+
+
+
+
