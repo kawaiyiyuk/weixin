@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
     <section>
-      <div class="weui-cells weui-cells_access" style="margin-top: -1px;">
+      <div class="weui-cells_contact-head weui-cells weui-cells_access" style="margin-top: -1px;">
         <router-link to="/contact/new-friends" class="weui-cell">
           <div class="weui-cell__hd">
             <img src="../../assets/images/contact_top-friend-notify.png" class="img-obj-cover"  >
@@ -23,15 +23,15 @@
             <img src="../../assets/images/contact_top-tag.png" class="img-obj-cover">
           </div>
           <div class="weui-cell__bd weui-cell_primary">
-              <p>公众号</p>
+              <p>标签</p>
           </div>
         </router-link>
-        <router-link  to="/contact/tags" class="weui-cell">
+        <router-link  to="/contact/official-accounts" class="weui-cell">
           <div class="weui-cell__hd">
-            <img src="../../assets/images/contact_top-tag.png" class="img-obj-cover">
+            <img src="../../assets/images/contact_top-offical.png" class="img-obj-cover">
           </div>
           <div class="weui-cell__bd weui-cell_primary">
-            <p>标签</p>
+            <p>公众号</p>
           </div>
         </router-link>
       </div>
@@ -52,7 +52,10 @@
         </div>
       </template>
     </section>
+    <div class="initial-bar"><span v-for="i in contactsInitialList">{{i}}</span></div>
   </div>
+
+
 </template>
 <script>
   export default{
@@ -76,9 +79,6 @@
     },
     activated() {
       this.$store.commit("toggleTipsStatus", -1)
-    },
-    mounted() {
-
     }
   }
 </script>

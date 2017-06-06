@@ -44,7 +44,12 @@ const contacts = [
     'telphone':1888888888,
     'album':[
       {
-        imgSrc:''
+        imgSrc:'http://webapp-yuanse.oss-cn-shanghai.aliyuncs.com/wexin/header_yuanfang.jpg',
+        date: 182625262
+      },
+      {
+        imgSrc:'http://webapp-yuanse.oss-cn-shanghai.aliyuncs.com/wexin/header_yuanfang.jpg',
+        date: 182625262
       }
     ],
     'area':['中国','北京','朝阳'],
@@ -158,7 +163,12 @@ const contacts = [
     'telphone':1888888888,
     'album':[
       {
-        imgSrc:''
+        imgSrc:'http://webapp-yuanse.oss-cn-shanghai.aliyuncs.com/wexin/header_08.jpg',
+        date: 182625262
+      },
+      {
+        imgSrc:'http://webapp-yuanse.oss-cn-shanghai.aliyuncs.com/wexin/header_08.jpg',
+        date: 182625262
       }
     ],
     'area':['中国','北京','朝阳'],

@@ -2,11 +2,16 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import mutations from './mutations'
 import contact from './contacts'
+import getters from './getters'
+import actions from './actions'
+import OfficialAccounts from './official-account'
 Vue.use(Vuex)
 const state = {
   tipsStatus: false,  //控制首页右上角菜单的显示(true)/隐藏(false)
   currentPageName: '微信',
   newMsgCount:0,
+  allContacts: contact.contacts,  //通讯录存放
+  OfficialAccounts:OfficialAccounts, //微信公众号存放
   headerStatus:true, //显示（true）/隐藏（false）wx-header组件
   msgList:{
     stickMsg:[],//置顶消息列表
@@ -229,6 +234,8 @@ const state = {
 
 export default new Vuex.Store({
   mutations,
-  state
+  state,
+  getters,
+  actions
 })
 
